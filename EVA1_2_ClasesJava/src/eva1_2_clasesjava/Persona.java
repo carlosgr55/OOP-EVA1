@@ -6,7 +6,7 @@ public class Persona {
     private String nombre;
     private String apellido;
     private int edad;
-    private boolean estadoCivil;
+    private boolean estadoCivil; //T casadx, F solterx
 
     //Metodos
     //Lectura y escritura de atributos
@@ -28,6 +28,7 @@ public class Persona {
         apellido = inApellido;
 
     }
+
     public int getEdad() {
         return edad;
     }
@@ -35,10 +36,26 @@ public class Persona {
     public void setEdad(int inEdad) {
         edad = inEdad;
     }
-    public boolean getEstadoCivil(){
+
+    public boolean getEstadoCivil() {
         return estadoCivil;
     }
-    public void setEstadoCivil(boolean inECivil){
+
+    public void setEstadoCivil(boolean inECivil) {
         estadoCivil = inECivil;
+    }
+
+    //Imprimir datos
+    public void imprimirDatos() {
+        System.out.println("");
+        System.out.println("Datos almacenados");
+        System.out.println("Nombre completo: " + nombre + " " + apellido);
+        System.out.println("Edad: " + edad);
+        //Verifica estado civil
+        if (estadoCivil) 
+            System.out.println("Estado civil: casadx");
+        else 
+            System.out.println("Estado civil: solterx");
+        
     }
 }

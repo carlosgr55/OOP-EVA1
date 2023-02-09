@@ -29,7 +29,19 @@ public class EVA1_2_ClasesJava {
         System.out.println(persona1.edad);
          */
         persona1.setNombre("Carlos");
-        System.out.println(persona1.getNombre());
+        persona1.setApellido("Gamboa");
+        persona1.setEdad(19);
+        persona1.setEstadoCivil(false);
+        persona1.imprimirDatos();
+        
+        //PERSONA 2
+        Persona persona2 = new Persona();
+        persona2.setNombre("Lana");
+        persona2.setApellido("Del Rey");
+        persona2.setEdad(37);
+        persona2.setEstadoCivil(false);
+        persona2.imprimirDatos();
+        
     }
 
 }
